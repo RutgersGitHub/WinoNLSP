@@ -1,0 +1,43 @@
+#************************************************************
+#*                        MadGraph 5                        *
+#*                                                          *
+#*                *                       *                 *
+#*                  *        * *        *                   *
+#*                    * * * * 5 * * * *                     *
+#*                  *        * *        *                   *
+#*                *                       *                 *
+#*                                                          *
+#*                                                          *
+#*    The MadGraph Development Team - Please visit us at    *
+#*    https://server06.fynu.ucl.ac.be/projects/madgraph     *
+#*                                                          *
+#************************************************************
+#*                                                          *
+#*               Command File for MadGraph 5                *
+#*                                                          *
+#*     run as ./bin/mg5  filename                           *
+#*                                                          *
+#************************************************************
+import model_v4 MODEL
+
+# Define multiparticle labels
+define p = u u~ c c~ d d~ s s~ b b~ g
+define j = p
+define l+ = e+ mu+ ta+
+define l- = e- mu- ta-
+define vl = ve vm vt
+define vl~ = ve~ vm~ vt~
+
+# Specify process(es) to run
+generate p p > x1+ n2 @1
+add process p p > x1- n2 @2
+add process p p > x1+ n2 j @3
+add process p p > x1- n2 j @4
+add process p p > x1+ n2 j j @5
+add process p p > x1- n2 j j @6
+
+# Output processes to MadEvent directory
+output MODEL
+
+# To generate events, you can go to the created directory and 
+# run ./bin/generate_events

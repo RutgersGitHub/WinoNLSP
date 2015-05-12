@@ -1,0 +1,8 @@
+# Ignore everything in this directory
+.DS_Store
+MG5_*
+BRIDGE*
+*.root
+
+# Except this file
+!.gitignore
