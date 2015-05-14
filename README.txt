@@ -29,6 +29,8 @@ A. The Wino NLSP scenario has an undecayed W boson in every event
    therefore it is recommended that Pythia be used to decay it in 
    the desired way
 
+B. The grid points in grid.HW.txt were used in Run I of the LHC
+
 # How to run scripts
 1. To generate slha files
 ./make_slha.sh WinoNLSP.cfg
