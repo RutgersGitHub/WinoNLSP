@@ -11,9 +11,9 @@ B. You will need to download BRIDGE v2.24 or later and
    document:
    https://github.com/RutgersGitHub/MCProductionGuide/blob/master/notes/tmp/RutgersMCGuide_temp.pdf
 
-C. Download the Explicit Higgs Decayer from Rutgers multilepton twiki:
-   https://twiki.cern.ch/twiki/pub/CMS/RutgersMultileptonSignalGenerationExamples/BRIDGESCRIPTS.tar.gz
-   tar -xzvf BRIDGESCRIPTS.tar.gz
+C. Download the Explicit Higgs Decayer from Indico webpage:
+   wget https://indico.cern.ch/event/396847/contribution/0/material/0/0.gz
+   tar -xzvf 0.gz
 
 D. Update the following files in the BRIDGESCRIPTS directory:
    DECAYRUNNER.sh, DGERUNNER.sh, DGERUNNERsing.sh, and MIXDECAYDGERUNNER.sh 
